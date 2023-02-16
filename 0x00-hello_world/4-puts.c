@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-	//String initialization
+	/*String initialization*/
 	char Mystr[] = "Programming is like building a multilingual puzzle";
 
 	puts(Mystr);
