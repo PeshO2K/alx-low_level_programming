@@ -4,10 +4,10 @@
  *
  *  main -Entry point
  *
- *  return : 0
+ *  return 
  */
 
-int main( void)
+int main(void)
 {
 	/*String initialization*/
 	char Mystr[] = "\"Programming is like building a multilingual puzzle";
