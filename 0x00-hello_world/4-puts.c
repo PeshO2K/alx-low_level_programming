@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 /**
  *
  *  main -Entry point
  *
  *  return 
  */
-
 int main(void)
 {
 	/*String initialization*/
