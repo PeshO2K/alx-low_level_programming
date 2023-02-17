@@ -11,20 +11,23 @@
 int main(void)
 {
 	int n;
-	char str [13];
+	char str[13];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0){
+	if (n > 0)
+	{
 		strcpy(str, "is positive");
 	}
-	else if (n == 0) {
-		strcpy(str, "is zero");	
+	else if (n == 0)
+	{
+		strcpy(str, "is zero");
 	}
-	else {
+	else
+	{
 		strcpy(str, "is negative");
-	}/* your code goes there */
-	printf("%d %s\n",n,str);
+	}
+	printf("%d %s\n", n, str);
 
 	return (0);
 }
