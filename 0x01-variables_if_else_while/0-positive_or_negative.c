@@ -16,13 +16,13 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0){
-		str = "is positive";
+		strcpy(str, "is positive");
 	}
 	else if (n == 0) {
-		str = "is zero";	
+		strcpy(str, "is zero");	
 	}
 	else {
-		str = "is negative";
+		strcpy(str, "is negative");
 	}/* your code goes there */
 	printf("%d %s\n",n,str);
 
