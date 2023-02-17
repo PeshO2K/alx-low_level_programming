@@ -6,12 +6,17 @@
  * Return: 0 Always (Success)
  */
 int main(void)
-{
-        int a;
-        
-        for (a = 97; a < 123 && a != 101 && a != 113; a++)
+{    
+        for (int a = 97; a < 123; a++)
         {
-                putchar(a);
+		if (a == 101 || a == 113)
+		{
+			a++;
+		}
+		else
+		{
+			putchar(a);
+		}
 	}
 
         putchar('\n');
