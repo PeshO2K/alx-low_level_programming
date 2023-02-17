@@ -20,12 +20,12 @@ int main(void)
 	if (l > 5)
 	{
 		strcpy(str, "greater than 5");
-        }
+	}
 	else if (l == 0)
 	{
 		strcpy(str, "0");
-        }
-	else 
+	}
+	else
 	{
 		strcpy(str, "less than 6 and not 0");
 	}
