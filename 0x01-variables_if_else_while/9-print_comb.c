@@ -13,7 +13,10 @@ int main(void)
 	{
 		putchar(n);
 		putchar(44);
-		putchar(32);
+		if (n != 57)
+		{
+			putchar(32);
+		}
 		n++;
 	}
 	putchar('\n');
