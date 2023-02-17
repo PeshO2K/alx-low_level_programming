@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int n = 0;
+	int n = 30;
 
-	while (n < 10)
+	while (n < 39)
 	{
 		putchar(n);
 		n++;
