@@ -9,9 +9,14 @@
  */
 int print_last_digit(int n)
 {
+	int N;
+
 	if (n < 0)
 	{
 		n = -n;
 	}
-	return (n % 10);
+	N = n % 10;
+
+	_purchar(N);
+	return (N);
 }
