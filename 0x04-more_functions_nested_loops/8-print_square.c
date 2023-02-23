@@ -3,7 +3,7 @@
 
 /**
  * print_square - prints square
- * @size - size
+ * @size: - size
  * Return: void
  */
 void print_square(int size)
@@ -20,7 +20,6 @@ void print_square(int size)
 			}
 			_putchar('\n');
 		}
-		
 	}
 	else
 	{
