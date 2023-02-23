@@ -13,12 +13,12 @@
 		putchar(a);
 	}
 	putchar('\n');
-}*/
+}
 int main(void)
 {
 	print_alphabet();
 	return (0);
-}
+}*/
 void print_alphabet(void)
 {
 	int a =97;
@@ -27,4 +27,6 @@ void print_alphabet(void)
 		putchar(a);
 	}
 	putchar('\n');
+
+	return (0);
 }
