@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_size - print triangle
+ * print_triangle - print triangle
  *@size: size of triangle
  * Return: Void
  */
