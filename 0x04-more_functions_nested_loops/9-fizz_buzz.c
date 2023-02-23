@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - replace multiples of 3 and 5
  *
