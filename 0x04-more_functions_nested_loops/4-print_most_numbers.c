@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_most_numbers - prints all numbers except 2 & 4 
+ * print_most_numbers - prints all numbers except 2 & 4
  *
  * Return: nothing
  */
