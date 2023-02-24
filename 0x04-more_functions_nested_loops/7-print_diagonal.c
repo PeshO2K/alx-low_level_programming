@@ -12,7 +12,7 @@ void print_diagonal(int n)
 
 	if (n > 0)
 	{
-		for(r = 0; r < n; r++)
+		for (r = 0; r < n; r++)
 		{
 			c = r;
 
