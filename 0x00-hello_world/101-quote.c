@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - unix operating system
  *
  * Return: 1 succcess
