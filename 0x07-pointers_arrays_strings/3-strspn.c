@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strspn -  gets the length of a prefix substring.
+ * @s: string segment to search through
+ * @accept: characters to find in segment
+ * Return: total count of occurrences
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, count = 0;
-	
+
 	while (*s != ',' && *s != '\0')
 	{
 		for (i = 0; accept[i]; i++)
