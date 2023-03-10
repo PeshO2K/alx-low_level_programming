@@ -2,9 +2,11 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
- *@n: number
- * Return: squareroot.
+ * sqrt_find - first checks for the square root of given number
+ * @g: the root to check through
+ * @c: number to find sqrt of
+ *
+ * Return: The sqrt of C or -1 if number does not have natural sqrt
  */
 int sqrt_find(int g, int c)
 {
