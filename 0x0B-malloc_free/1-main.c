@@ -11,12 +11,14 @@ int main(void)
 {
     char *s;
 
-    s = _strdup("ALX SE");
+	
+    s = _strdup("First, solve the problem. Then, write the code.");
     if (s == NULL)
     {
         printf("failed to allocate memory\n");
         return (1);
     }
+    printf("Moraa: %ld\n", sizeof(s));
     printf("%s\n", s);
     free(s);
     return (0);
