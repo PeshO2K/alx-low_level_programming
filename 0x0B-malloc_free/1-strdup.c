@@ -11,10 +11,15 @@
 char *_strdup(char *str)
 {
 	char *ar;
-	unsigned int i = 0;
-	int j = _strlen(str);	
-	/*printf("strdup Moraa: %ld\n", sizeof(*str));*/
-	ar = malloc(j + 1);
+	unsigned int i = 0, len = 0;
+	
+	while (str[len])
+	{
+		len++;
+	}
+		
+	
+	ar = malloc(len + 1);
 
 	if (str == NULL || ar == NULL)
 	{
