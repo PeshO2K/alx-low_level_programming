@@ -11,20 +11,23 @@
 char *_strdup(char *str)
 {
 	char *ar;
-	unsigned int i = 0, len = 0;
-	
-	while (str[len])
-	{
-		len++;
-	}
-		
-	
-	ar = malloc(len + 1);
+	unsigned int i = 0;
 
-	if (str == NULL || ar == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
+	while (str[i])
+	{
+		i++;
+	}
+	ar = malloc(i + 1);
+
+	if (ar == NULL)
+	{
+		return (NULL);
+	}
+	i = 0;
 
 	while (*str)
 	{
