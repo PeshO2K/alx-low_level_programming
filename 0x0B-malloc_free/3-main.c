@@ -40,8 +40,8 @@ int main(void)
     
     printf("startng\n");
 
-    grid = alloc_grid(6, 4);
-    printf("made it");
+    grid = alloc_grid(128, 128);
+    printf("made it\n");
     if (grid == NULL)
     {
         return (1);
