@@ -37,8 +37,11 @@ void print_grid(int **grid, int width, int height)
 int main(void)
 {
     int **grid;
+    
+    printf("startng\n");
 
     grid = alloc_grid(6, 4);
+    printf("made it");
     if (grid == NULL)
     {
         return (1);
