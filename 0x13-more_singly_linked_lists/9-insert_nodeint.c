@@ -1,4 +1,24 @@
 #include "lists.h"
+/**
+ *listint_len - Returns the number of elements
+ *in a linked listint_t list
+ *@h: A pointer to the head of the list
+ *
+ *
+ *Return: the number of elements in the listint_t list
+ */
+
+size_t listint_len(const listint_t *h)
+{
+        size_t n = 0;
+
+        while (h)
+        {
+                n++;
+                h = h->next;
+        }
+        return (n);
+}
 
 /**
  * insert_nodeint_at_index - inserts a new node at a
@@ -32,9 +52,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = new_node;
 		return (new_node);
 	}
-	if (*head)
+	if (*head && idx < listint_len(*head))
 	{
 		cursor = *head;
+		
 		count = 0;
 
 		while (count < idx - 1 && cursor)
