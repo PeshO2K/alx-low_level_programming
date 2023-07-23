@@ -30,5 +30,6 @@ size_t print_listint(const listint_t *h)
 		count += 1;
 		h = h->next;
 	}
+	free(h);
 	return (count);
 }
