@@ -13,7 +13,7 @@ size_t listint_len(const listint_t *h)
 
 	while (cursor)
 	{
-		count ++;
+		count++;
 		cursor = cursor->next;
 	}
 	return (count);
@@ -39,7 +39,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		count = 0;
 		cursor = *head;
 
-		if (index != 0 )
+		if (index != 0)
 		{
 			while (cursor && count < index - 1)
 			{
@@ -51,7 +51,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			cursor->next = del_node->next;
 			free(del_node);
 		}
-		else 
+		else
 		{
 			*head = cursor->next;
 			free(cursor);
