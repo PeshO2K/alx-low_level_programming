@@ -10,14 +10,14 @@
 
 size_t listint_len(const listint_t *h)
 {
-        size_t n = 0;
+	size_t n = 0;
 
-        while (h)
-        {
-                n++;
-                h = h->next;
-        }
-        return (n);
+	while (h)
+	{
+		n++;
+		h = h->next;
+	}
+	return (n);
 }
 
 /**
@@ -34,7 +34,6 @@ size_t listint_len(const listint_t *h)
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int count;
-	/*listint_t *after;*/
 	listint_t *cursor, *new_node;
 
 	new_node = malloc(sizeof(listint_t));
@@ -57,22 +56,19 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		cursor = *head;
 		if (idx > listint_len(cursor))
 		{
-				return (NULL);
+			return (NULL);
 		}
 		count = 0;
 
 		while (count < idx - 1 && cursor)
 		{
 			cursor = cursor->next;
-			/*printf("\tcount: %u\n", count);*/
 			count++;
 		}
 
 		new_node->next = cursor->next;
-
 		cursor->next = new_node;
 		return (new_node);
-
 	}
 
 	return (NULL);
