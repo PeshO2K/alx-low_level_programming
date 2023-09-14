@@ -2,7 +2,7 @@
 /**
  * sum_dlistint - returns the sum of all the data (n) in list.
  * @head: head pointer
- * Returns: sum of all elements
+ * Return: sum of all elements
  */
 int sum_dlistint(dlistint_t *head)
 {
