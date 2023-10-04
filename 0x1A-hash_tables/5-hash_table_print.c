@@ -14,7 +14,6 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *curr;
 	unsigned long int idx, arr = 0;
 
-
 	if (ht)
 	{
 		printf("{");
@@ -22,8 +21,8 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (ht->array[idx])
 			{
-
 				curr = ht->array[idx];
+
 				for (; curr; curr = curr->next)
 				{
 					if (arr)
@@ -33,10 +32,8 @@ void hash_table_print(const hash_table_t *ht)
 					printf("'%s' : '%s'", curr->key, curr->value);
 					arr = 1;
 				}
-
 			}
 		}
 		printf("}\n");
 	}
-	/* function body here */
 }

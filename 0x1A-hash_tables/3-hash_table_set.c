@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht || !strlen(key))
 	{
 		new_node = malloc(sizeof(hash_node_t));
-		/*printf("Created new_node for set: ");*/
+
 		if (new_node)
 		{
 			idx = key_index((const unsigned char *)key, ht->size);
@@ -28,10 +28,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			new_node->value = strdup(value);
 			new_node->next = NULL;
 
-
 			while (curr != NULL)
 			{
-				/*(printf("Chaining at idx: %lu\n", idx);)*/
 				if (strcmp(curr->key, key) == 0)
 				{
 					free(curr->value);
@@ -47,7 +45,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			curr = ht->array[idx];
 			new_node->next = curr;
 			ht->array[idx] = new_node;
-
 			return (1);
 		}
 	}

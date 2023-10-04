@@ -18,19 +18,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht || !strlen(key))
 	{
 		idx = key_index((const unsigned char *)key, ht->size);
-		/*printf("\tat idx: %lu\n", idx);*/
 		curr = ht->array[idx];
+
 		if (curr)
 		{
-			/*printf("Returning value\n");*/
 			while ((strcmp(key, curr->key) != 0) && curr->next != NULL)
 			{
-				/*printf("in chain: key: %s\n", key);*/
 				curr = curr->next;
 			}
 			return (curr->value);
 		}
 	}
 	return (NULL);
-	/* function body here */
 }

@@ -29,10 +29,8 @@ void hash_table_delete(hash_table_t *ht)
 					free(del);
 				}
 			}
-
 		}
 		free(ht->array);
 		free(ht);
 	}
-	/* function body here */
 }
