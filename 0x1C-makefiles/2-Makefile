@@ -10,5 +10,6 @@ $(NAME): $(OBJ)
 
 %.o : %.c
 	$(CC) -c -o $@ $^
+# working alternative:
 #all: $(OBJ)
 #	$(CC) $(OBJ) -o $(NAME)
