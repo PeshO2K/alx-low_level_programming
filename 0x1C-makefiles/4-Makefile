@@ -11,7 +11,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 #	$(CC) $^ -o $@
 
 #%.o : %.c
-	$(CC) -c -o $@ $^
+#	$(CC) -c -o $@ $^
 # working alternative:
 all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
